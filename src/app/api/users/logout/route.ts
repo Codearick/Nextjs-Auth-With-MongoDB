@@ -6,7 +6,7 @@ import jwt from 'jsonwebtoken'
 
 connect() 
 
-export async function POST(request: NextRequest){
+export async function GET(request: NextRequest){
     try {
        const response =  NextResponse.json({
             message: "Logged Out Successfully",
