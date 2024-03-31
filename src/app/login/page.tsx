@@ -65,7 +65,7 @@ const LoginPage = () => {
         value={user.password}
         onChange={(e) => setUser({ ...user, password: e.target.value })}
         placeholder='Password'
-        type='text'
+        type='password'
       />
 
       <button
@@ -75,7 +75,7 @@ const LoginPage = () => {
       </button>
 
       <Link href={'/signup'}>
-        <button className='border bg-blue-600 p-3 m-2 mx-4 rounded-lg'>
+        <button className='hover:underline m-2 mx-4 rounded-lg'>
         Click to Signup
         </button>
       </Link>
