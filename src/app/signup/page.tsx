@@ -47,7 +47,7 @@ const SignupPage = () => {
     <div className='flex flex-col items-center justify-center min-h-screen py-2 '>
       <h1 className='text-4xl m-5 p-3'> {loading ? "Processing" : "Signup"}</h1>
 
-      <div className='flex flex-col'>
+      <div className='flex flex-col border py-10 px-[8vw]'>
       <label htmlFor="username">Username:</label>
       <input
         className='text-black p-2 rounded-xl my-3'
@@ -75,17 +75,17 @@ const SignupPage = () => {
         value={user.password}
         onChange={(e) => setUser({ ...user, password: e.target.value })}
         placeholder='Password'
-        type='text'
+        type='password'
       />
 
       <button
         onClick={onSignup}
-        className='border p-3 m-2 mb-4 rounded-full'>
+        className='border p-3 m-2 mb-4 rounded-lg'>
         {buttonDisabled ? "Fill to signup" : "Signup"}
       </button>
 
       <Link href={'/login'}>
-        <button className='border p-3 m-2 mx-4 rounded-full'>
+        <button className='hover:underline hover:text-blue-500 p-3 m-2 mx-4 rounded-full'>
         Click to login
         </button>
       </Link>
